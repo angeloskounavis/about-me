@@ -2,14 +2,18 @@
 
 
 header {
-background-image: cover;
+  
 background-image: url("img/imagewood.png");
       background-size: cover;
     /* background-position: top;  */
-      height: 900px;;
+      height: 00px;;
       display: block;
 }
 
 h1 {
+  text-align: center;
+}
+
+body {
   text-align: center;
 }
