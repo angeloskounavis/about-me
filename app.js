@@ -52,17 +52,20 @@ function fanOfFood() {
 }
 fanOfFood();
 
+function likeCooking() {
+  let likesCooking = prompt('Do you think that I like to cook? (yes or no)');
+  if (likesCooking.toLowerCase() === 'yes' || likesCooking.toLowerCase() === 'yep') {
+    // console.log('Of course I do, bring me some pastaaaa!');
+    alert('Of course I do, bring me some pastaaaa!');
+    score++;
+  }
+  else if (likesCooking.toLowerCase() === 'no' || likesCooking.toLowerCase() === 'nope') {
+    // console.log('aww not again, of course I do!');
+    alert('aww not again, of course I do!');
+  }
+} 
+likeCooking();
 
-let likesCooking = prompt('Do you think that I like to cook? (yes or no)');
-if (likesCooking.toLowerCase() === 'yes' || likesCooking.toLowerCase() === 'yep') {
-  // console.log('Of course I do, bring me some pastaaaa!');
-  alert('Of course I do, bring me some pastaaaa!');
-  score++;
-}
-else if (likesCooking.toLowerCase() === 'no' || likesCooking.toLowerCase() === 'nope') {
-  // console.log('aww not again, of course I do!');
-  alert('aww not again, of course I do!');
-}
 
 let watchGot = prompt('Do you think that I like to watch Game of Thrones?');
 if (watchGot.toLowerCase() === 'yes' || watchGot.toLowerCase() === 'yep') {
