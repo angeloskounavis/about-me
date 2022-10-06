@@ -37,17 +37,21 @@ function userName() {
 }
 userName();
 
-let likesFood = prompt('Do you think that I am fan of food? (yes or no)');
-console.log(likesFood);
-let likesFoodLower = likesFood.toLowerCase();
-if (likesFoodLower === 'yes' || likesFoodLower === 'yep') {
-  // console.log('Of course I am, great job!');
-  alert('Of course I am, great job!');
-  score++;
-} else if (likesFoodLower === 'no' || likesFoodLower === 'nope') {
-  // console.log('Oh come on now, of course I am. I love food!');
-  alert('Oh come on now, of course I am. I love food!');
+function fanOfFood() {
+  let likesFood = prompt('Do you think that I am fan of food? (yes or no)');
+  console.log(likesFood);
+  let likesFoodLower = likesFood.toLowerCase();
+  if (likesFoodLower === 'yes' || likesFoodLower === 'yep') {
+    // console.log('Of course I am, great job!');
+    alert('Of course I am, great job!');
+    score++;
+  } else if (likesFoodLower === 'no' || likesFoodLower === 'nope') {
+    // console.log('Oh come on now, of course I am. I love food!');
+    alert('Oh come on now, of course I am. I love food!');
+  }
 }
+fanOfFood();
+
 
 let likesCooking = prompt('Do you think that I like to cook? (yes or no)');
 if (likesCooking.toLowerCase() === 'yes' || likesCooking.toLowerCase() === 'yep') {
