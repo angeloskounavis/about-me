@@ -82,16 +82,19 @@ watchGot();
 
 // QUESTION NUMBER 5!!
 
-let likesTravel = prompt('Do you think I like to travel');
-if (likesTravel.toLowerCase() === 'yes' || likesTravel.toLowerCase() === 'yep') {
-  // console.log('Yes you are right. I love to travel and see new places!');
-  alert('Yes you are right. I love to travel and see new places!');
-  score++;
+function likesTravel() {
+  let likesTravel = prompt('Do you think I like to travel');
+  if (likesTravel.toLowerCase() === 'yes' || likesTravel.toLowerCase() === 'yep') {
+    // console.log('Yes you are right. I love to travel and see new places!');
+    alert('Yes you are right. I love to travel and see new places!');
+    score++;
+  }
+  else if (likesTravel.toLowerCase() === 'no' || likesTravel.toLowerCase() === 'nope') {
+    // console.log('Nooo, of course I like to travel');
+    alert('Nooo, of course I like to travel');
+  }
 }
-else if (likesTravel.toLowerCase() === 'no' || likesTravel.toLowerCase() === 'nope') {
-  // console.log('Nooo, of course I like to travel');
-  alert('Nooo, of course I like to travel');
-}
+likesTravel();
 
 const myFavMovies = ['Braveheart', "Hangover 2", "Wolf of Wall Street"];
 
