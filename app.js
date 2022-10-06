@@ -122,31 +122,35 @@ function myFaveMovies() {
 }
 myFaveMovies();
 
+function myNumber() {
+  let myNumber = '5';
 
-let myNumber = '5';
-
-let numberAttempts = 4;
-
-while (numberAttempts) {
-  let numberGuess = prompt ('Heyy, guess my favorite number from 1-10');
-  numberAttempts--;
-  //or (let i= 0; i < myNumber) {
-  if (numberGuess < myNumber) {
-    alert('I\'m sorry that is too low. Try again');
-    //numberAttempts = 0;
-  }
-  else if (numberGuess > myNumber) {
-    alert ('Too high oh nooo. Try again');
-    // numberAttempts = 0;
-  }
-  else if (numberGuess === myNumber) {
-    alert('Nicee, you are correct!!');
-    score++;
-    break;
-  }
-
-  if(numberAttempts === 0) {
-    alert('I am sorry, the correct answer is 5');
+  let numberAttempts = 4;
+  
+  while (numberAttempts) {
+    let numberGuess = prompt ('Heyy, guess my favorite number from 1-10');
+    numberAttempts--;
+    //or (let i= 0; i < myNumber) {
+    if (numberGuess < myNumber) {
+      alert('I\'m sorry that is too low. Try again');
+      //numberAttempts = 0;
+    }
+    else if (numberGuess > myNumber) {
+      alert ('Too high oh nooo. Try again');
+      // numberAttempts = 0;
+    }
+    else if (numberGuess === myNumber) {
+      alert('Nicee, you are correct!!');
+      score++;
+      break;
+    }
+  
+    if(numberAttempts === 0) {
+      alert('I am sorry, the correct answer is 5');
+    }
   }
 }
+myNumber();
+
+
 alert ('You score is ' + score);
