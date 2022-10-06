@@ -69,3 +69,14 @@ image2{
 #top10 li {
 list-style-position:inside;
 }
+
+ol {
+  list-style-type:decimal;
+  list-style-position: outside;
+  display: inline-block;
+}
+
+ol li {
+  text-align: left;
+
+}
