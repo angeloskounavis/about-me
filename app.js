@@ -66,17 +66,19 @@ function likeCooking() {
 } 
 likeCooking();
 
-
-let watchGot = prompt('Do you think that I like to watch Game of Thrones?');
-if (watchGot.toLowerCase() === 'yes' || watchGot.toLowerCase() === 'yep') {
-  // console.log('Yesss, Game of Thrones is the best show ever!');
-  alert('Yesss, Game of Thrones is the best show ever!');
-  score++;
+function watchGot() {
+  let watchGot = prompt('Do you think that I like to watch Game of Thrones?');
+  if (watchGot.toLowerCase() === 'yes' || watchGot.toLowerCase() === 'yep') {
+    // console.log('Yesss, Game of Thrones is the best show ever!');
+    alert('Yesss, Game of Thrones is the best show ever!');
+    score++;
+  }
+  else if (watchGot.toLowerCase() === 'no' || watchGot.toLowerCase() === 'nope') {
+    // console.log('Wrong, GOT is my favorite show');
+    alert('Wrong, GOT is my favorite show');
+  }
 }
-else if (watchGot.toLowerCase() === 'no' || watchGot.toLowerCase() === 'nope') {
-  // console.log('Wrong, GOT is my favorite show');
-  alert('Wrong, GOT is my favorite show');
-}
+watchGot();
 
 // QUESTION NUMBER 5!!
 
