@@ -29,9 +29,13 @@ if (trueValue && falseValue) {
   console.log('if evaluated to true');
 }
 
-let userName = prompt('Hi there, What is your name ?');
-// console.log(userName);
-alert('Hi ' + userName);
+
+function userName() {
+  let userName = prompt('Hi there, What is your name ?');
+  // console.log(userName);
+  alert('Hi ' + userName);
+}
+userName();
 
 let likesFood = prompt('Do you think that I am fan of food? (yes or no)');
 console.log(likesFood);
