@@ -96,27 +96,32 @@ function likesTravel() {
 }
 likesTravel();
 
-const myFavMovies = ['Braveheart', "Hangover 2", "Wolf of Wall Street"];
 
-let attemptsThatRemain = 3;
-let userGuess = prompt('Guess one of my favorite movies..');
+function myFaveMovies() {
+  const myFavMovies = ['Braveheart', "Hangover 2", "Wolf of Wall Street"];
 
-while (attemptsThatRemain) {
-  attemptsThatRemain--;
-  console.log(`I am in the while loop. You have ${attemptsThatRemain} attempts remaining`);
-  for (let i = 0; i < myFavMovies.length; i++) {
-    if (userGuess === myFavMovies[i]) {
-      alert('You are correct');
-      score++;
-      console.log('You are correct');
-      attemptsThatRemain=0
-      break
+  let attemptsThatRemain = 3;
+  let userGuess = prompt('Guess one of my favorite movies..');
+  
+  while (attemptsThatRemain) {
+    attemptsThatRemain--;
+    console.log(`I am in the while loop. You have ${attemptsThatRemain} attempts remaining`);
+    for (let i = 0; i < myFavMovies.length; i++) {
+      if (userGuess === myFavMovies[i]) {
+        alert('You are correct');
+        score++;
+        console.log('You are correct');
+        attemptsThatRemain=0
+        break
+      }
     }
-  }
-  if(attemptsThatRemain) {
-alert(`You have ${attemptsThatRemain} attempts remaining`);
-userGuess = prompt('Guess again');
-}}
+    if(attemptsThatRemain) {
+  alert(`You have ${attemptsThatRemain} attempts remaining`);
+  userGuess = prompt('Guess again');
+  }}
+}
+myFaveMovies();
+
 
 let myNumber = '5';
 
