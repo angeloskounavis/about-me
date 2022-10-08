@@ -1,14 +1,11 @@
-
-
-
 body {
 
-background-image: url("../img/white wall.png");
-      background-position: top ;
-    /* background-position: top;  */
-      height: 200px;
-      display: block;
-      text-align: center;
+  background-image: url("../img/white wall.png");
+  background-position: top;
+  /* background-position: top;  */
+  height: 200px;
+  display: block;
+  text-align: center;
 }
 
 h1 {
@@ -22,8 +19,8 @@ h2 {
 }
 
 p {
-/* text-align: left; */
-/* border-top-width: 10px;
+  /* text-align: left; */
+  /* border-top-width: 10px;
 border: 10px;
 height: 10px; */
 
@@ -32,51 +29,101 @@ height: 10px; */
 
 
 body {
-background-color:white;
-color: black;
-border-bottom:px;
-/* margin-left:auto;
+  background-color: white;
+  color: black;
+  border-bottom: px;
+  /* margin-left:auto;
 margin-right:auto; */
-text-align:center;
-font-family: Arial, Helvetica, sans-serif;
-border: 20px;
-height: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 20px;
+  height: 20px;
 
-  }
+}
 
-  
-  div {
-  text-align: center ;
+
+div {
+  text-align: center;
   /* width: 600px; */
   border: 15px;
   /* padding: 00px; */
   margin: auto;
-  
-  }
-image2{
- text-align: left;
- 
+
+}
+
+image2 {
+  text-align: left;
+
 }
 
 /* #image1{
   /* width: 300px; */
 /* }
 
-.listunorder{ */ */
-
+.listunorder{ */
+*/
 /* } */
 
 #top10 li {
-list-style-position:inside;
+  list-style-position: inside;
+  background-color: bisque;
+    line-height: 1.2;
+    font-size: 18px;
+    border: 10px;
+    border-style: inset;
+    border-color: #010101;
+  padding: 200em;
+  margin-top: 10em;
 }
 
 ol {
-  list-style-type:decimal;
+  list-style-type: decimal;
   list-style-position: outside;
   display: inline-block;
 }
 
 ol li {
   text-align: left;
+  /* background-color: bisque;
+    line-height: 1.2;
+    font-size: 18px;
+    border: 10px;
+    border-style: inset;
+    border-color: #010101;
+    padding: 1em;
+    margin: 40px 30rem 40px 30rem; */
 
+}
+
+#bio {
+  background-color: bisque;
+  line-height: 1.2;
+  font-size: 18px;
+  border: 10px;
+  border-style: inset;
+  border-color: #010101;
+  padding: 1em;
+  margin: 40px 30rem 40px 30rem;
+}
+
+#cooking {
+  background-color: bisque;
+  line-height: 1.2;
+  font-size: 18px;
+  border: 10px;
+  border-style: inset;
+  border-color: #010101;
+  padding: 1em;
+  margin: 40px 30rem 40px 30rem;
+}
+
+div {
+  background-color: bisque;
+  line-height: 1.2;
+  font-size: 18px;
+  border: 10px;
+  border-style: inset;
+  border-color: #010101;
+  padding: 1em;
+  margin: 40px 30rem 40px 30rem;
 }

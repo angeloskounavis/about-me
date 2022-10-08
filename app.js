@@ -149,6 +149,54 @@ function myNumber() {
       alert('I am sorry, the correct answer is 5');
     }
   }
+const myFavMovies = ['Braveheart', 'Hangover 2', 'Wolf of Wall Street'];
+
+let attemptsThatRemain = 6;
+let userGuess = prompt('Guess one of my favorite movies..');
+
+while (attemptsThatRemain) {
+  attemptsThatRemain--;
+  console.log(`I am in the while loop. You have ${attemptsThatRemain} attempts remaining`);
+  for (let i = 0; i < myFavMovies.length; i++) {
+    if (userGuess === myFavMovies[i]) {
+      alert('You are correct');
+      score++;
+      console.log('You are correct');
+      attemptsThatRemain=0;
+      break;
+    }
+  }
+  if(attemptsThatRemain) {
+    alert(`You have ${attemptsThatRemain} attempts remaining`);
+    userGuess = prompt('Guess again');
+  }
+}
+
+let myNumber = '5';
+
+let numberAttempts = 4;
+
+while (numberAttempts) {
+  let numberGuess = prompt ('Heyy, guess my favorite number from 1-10');
+  numberAttempts--;
+  //or (let i= 0; i < myNumber) {
+  if (numberGuess < myNumber) {
+    alert('I\'m sorry that is too low. Try again');
+    //numberAttempts = 0;
+  }
+  else if (numberGuess > myNumber) {
+    alert ('Too high oh nooo. Try again');
+    // numberAttempts = 0;
+  }
+  else if (numberGuess === myNumber) {
+    alert('Nicee, you are correct!!');
+    score++;
+    break;
+  }
+
+  if(numberAttempts === 0) {
+    alert('I am sorry, the correct answer is 5');
+  }
 }
 myNumber();
 
